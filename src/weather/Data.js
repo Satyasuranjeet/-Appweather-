@@ -1,6 +1,5 @@
 import React,{useState} from "react";
 import "./data.css";
-import { API_KEY } from '../config';
 function Data() {
     const [temperature,settemperature]=useState("");
     const [ humidity,sethumidity]=useState("");
@@ -18,7 +17,7 @@ function Data() {
   function successCallback(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
-    const apiKey = API_KEY;
+    const apiKey = process.env.REACT_APP_API_KEY;
     const apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
     fetch(apiUrl)
