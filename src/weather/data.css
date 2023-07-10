@@ -1,0 +1,28 @@
+.display-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-box,
+  .temp,
+  .data,
+  .location {
+    margin: 20px;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+  }
+  .icon-box {
+    width: 400px;
+  }
+  .temp p{
+        font-size: 40px;
+  }
+  .temp{
+    border-radius: 50%;
+  }
